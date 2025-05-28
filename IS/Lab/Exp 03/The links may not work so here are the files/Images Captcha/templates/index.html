@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Selection CAPTCHA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <h2 id="captcha-question">Loading CAPTCHA...</h2>
+    <div class="captcha-container" id="captcha-container"></div>
+    <button onclick="verifyCaptcha()">Submit</button>
+    <p class="message" id="captcha-message"></p>
+    <button onclick="loadCaptcha()">Refresh CAPTCHA</button>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

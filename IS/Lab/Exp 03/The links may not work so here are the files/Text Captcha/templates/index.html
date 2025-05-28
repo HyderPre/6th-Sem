@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text CAPTCHA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <h2>Text CAPTCHA Verification</h2>
+    <div class="captcha-container">
+        <img id="captcha-image" src="" alt="CAPTCHA" />
+        <button onclick="refreshCaptcha()">Refresh</button>
+        <br>
+        <input type="text" id="captcha-input" placeholder="Enter the CAPTCHA">
+        <button onclick="verifyCaptcha()">Submit</button>
+        <p class="message" id="captcha-message"></p>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

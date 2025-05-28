@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.captcha-container {
+    margin-top: 20px;
+}
+
+img {
+    border: 1px solid #000;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.message {
+    margin-top: 10px;
+    font-weight: bold;
+}

@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.captcha-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.captcha-container img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    transition: transform 0.2s, border 0.2s;
+}
+
+.captcha-container img.selected {
+    border: 2px solid blue;
+    transform: scale(1.1);
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.message {
+    margin-top: 10px;
+    font-weight: bold;
+}
